@@ -20,12 +20,8 @@ function mb_trim(string $string, string $characters = " \f\n\r\t\v\x00\u{00A0}\u
         $characters = mb_convert_encoding($characters, "UTF-8", $encoding);
     }
 
-    $charMap = array_map(static function(string $char) {
-        return preg_quote($char, '/');
-    }, mb_str_split($characters));
-
+    $charMap = array_map(static fn(string $char): string => preg_quote($char, '/'), mb_str_split($characters));
     $regexClass = implode('', $charMap);
-
     $regex = "/^[" . $regexClass . "]+|[" . $regexClass . "]+$/u";
 
     $return = preg_replace($regex, '', $string);
@@ -57,12 +53,8 @@ function mb_ltrim(string $string, string $characters = " \f\n\r\t\v\x00\u{00A0}\
         $characters = mb_convert_encoding($characters, "UTF-8", $encoding);
     }
 
-    $charMap = array_map(static function(string $char) {
-        return preg_quote($char, '/');
-    }, mb_str_split($characters));
-
+    $charMap = array_map(static fn(string $char): string => preg_quote($char, '/'), mb_str_split($characters));
     $regexClass = implode('', $charMap);
-
     $regex = "/^[" . $regexClass . "]+/u";
 
     $return = preg_replace($regex, '', $string);
@@ -94,12 +86,8 @@ function mb_rtrim(string $string, string $characters = " \f\n\r\t\v\x00\u{00A0}\
         $characters = mb_convert_encoding($characters, "UTF-8", $encoding);
     }
 
-    $charMap = array_map(static function(string $char) {
-        return preg_quote($char, '/');
-    }, mb_str_split($characters));
-
+    $charMap = array_map(static fn(string $char): string => preg_quote($char, '/'), mb_str_split($characters));
     $regexClass = implode('', $charMap);
-
     $regex = "/[" . $regexClass . "]+$/u";
 
     $return = preg_replace($regex, '', $string);
