@@ -1,7 +1,7 @@
 <?php
 
 /**
- * Multi-byte safely strip whitespace (or other characters) from the beginning and end of a string.
+ * Multi-byte safely strip white-spaces (or other characters) from the beginning and end of a string.
  *
  * @param string $string The string that will be trimmed.
  * @param string $characters Optionally, the stripped characters can also be specified using the $characters parameter. Simply list all characters that you want to be stripped.
@@ -44,7 +44,7 @@ function mb_trim(string $string, string $characters = " \f\n\r\t\v\x00\u{00A0}\u
 }
 
 /**
- * Multi-byte safely strip whitespace (or other characters) from the beginning of a string.
+ * Multi-byte safely strip white-spaces (or other characters) from the beginning of a string.
  *
  * @param string $string The string that will be trimmed.
  * @param string $characters Optionally, the stripped characters can also be specified using the $characters parameter. Simply list all characters that you want to be stripped.
@@ -87,7 +87,7 @@ function mb_ltrim(string $string, string $characters = " \f\n\r\t\v\x00\u{00A0}\
 }
 
 /**
- * Multi-byte safely strip whitespace (or other characters) from the end of a string.
+ * Multi-byte safely strip white-spaces (or other characters) from the end of a string.
  *
  * @param string $string The string that will be trimmed.
  * @param string $characters Optionally, the stripped characters can also be specified using the $characters parameter. Simply list all characters that you want to be stripped.
