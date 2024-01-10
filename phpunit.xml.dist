@@ -26,9 +26,6 @@
             <text outputFile="php://stdout"/>
         </report>
     </coverage>
-    <logging>
-        <testdoxHtml outputFile="build/coverage-html"/>
-    </logging>
     <source>
         <include>
             <directory>src</directory>
