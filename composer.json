@@ -14,9 +14,9 @@
     },
     "license": "MIT",
     "autoload": {
-        "psr-4": {
-            "Phpwatch\\MbTrimPolyfill\\": "src/"
-        }
+        "files": [
+            "src/mb_trim.php"
+        ]
     },
     "authors": [
         {
