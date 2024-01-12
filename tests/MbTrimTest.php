@@ -1,6 +1,6 @@
 <?php
 
-namespace PHPWatch\MbTrimPolyfill\Tests;
+namespace Polyfills\MbTrimPolyfill\Tests;
 
 use PHPUnit\Framework\TestCase;
 
