@@ -1,6 +1,6 @@
 # `mb_trim`, `mb_ltrim`, and `mb_rtrim` polyfills
 
-[![Latest Stable Version](http://poser.pugx.org/polyfills/mb-trim-polyfill/v)](https://packagist.org/packages/polyfills/mb-trim-polyfill) [![License](http://poser.pugx.org/polyfills/mb-trim-polyfill/license)](https://packagist.org/packages/polyfills/mb-trim-polyfill) [![PHP Version Require](http://poser.pugx.org/polyfills/mb-trim-polyfill/require/php)](https://packagist.org/packages/polyfills/mb-trim-polyfill)
+[![Latest Stable Version](http://poser.pugx.org/polyfills/mb-trim/v)](https://packagist.org/packages/polyfills/mb-trim) [![License](http://poser.pugx.org/polyfills/mb-trim/license)](https://packagist.org/packages/polyfills/mb-trim) [![PHP Version Require](http://poser.pugx.org/polyfills/mb-trim/require/php)](https://packagist.org/packages/polyfills/mb-trim)
 
 Provides user-land PHP polyfills for the [`mb_trim`, `mb_ltrim`, and `mb_rtrim` functions added in PHP 8.4](https://php.watch/versions/8.4/mb_trim-mb_ltrim-mb_rtrim).
 
@@ -9,12 +9,12 @@ Requires PHP 8,1, 8.2 or PHP 8.3 with `mbstring` extension. Not supported on PHP
 ## Installation
 
 ```bash
-composer require polyfills/mb-trim-polyfill
+composer require polyfills/mb-trim
 ```
 
 ## Usage
 
-Simply use the `mb_trim`, `'mb_ltrim`, and `mb_rtrim` functions as if they were declared already.
+Simply use the `mb_trim`, `mb_ltrim`, and `mb_rtrim` functions as if they were declared already.
 
 ## Contributions
 
