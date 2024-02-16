@@ -68,6 +68,8 @@ class MbTrimTest extends TestCase {
 
         $this->assertSame("f", mb_trim("foo", "oo"));
 
+        $this->assertSame("foo\n", mb_trim("foo\n", "o"));
+        $this->assertSame("foo\n", mb_rtrim("foo\n", "o"));
 
         $this->expectException(\ValueError::class);
         mb_trim( "\u{180F}", "", "NULL");
